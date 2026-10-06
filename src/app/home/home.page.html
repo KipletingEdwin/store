@@ -18,10 +18,16 @@
         {{item.itemCategory}}
       </ion-card-subtitle>
       <ion-item>
-        <ion-icon name="ellipse"></ion-icon>
+        <ion-icon *ngIf="item.itemPriority ==='high'" color="danger" size="small" name="ellipse"></ion-icon>
+        <ion-icon *ngIf="item.itemPriority ==='middle'" color="warning" size="small" name="ellipse"></ion-icon>
+        <ion-icon *ngIf="item.itemPriority ==='low'" color="success" size="small" name="ellipse"></ion-icon>
         <ion-label>{{item.itemName}}</ion-label>
       </ion-item>
     </ion-card-header>
+
+    <ion-card-content>
+      <ion-label>Due{{item.itemDueDate | date:'fullDate'}}</ion-label>
+    </ion-card-content>
 
   </ion-card>
 </ion-content>

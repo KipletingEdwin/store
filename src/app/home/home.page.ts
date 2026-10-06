@@ -25,7 +25,13 @@ export class HomePage {
     itemDueDate: '30-10-21',
     itemPriority: 'middle',
     itemCategory: 'Personal'
-  }
+  },
+    {
+    itemName: 'Workout',
+    itemDueDate: '30-10-21',
+    itemPriority: 'high',
+    itemCategory: 'Work'
+  },
 ]
 
     today : number = Date.now()
