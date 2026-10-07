@@ -1,10 +1,10 @@
 
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
+
+  <!-- <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-button>EK</ion-button>
     </ion-buttons>
-
     <ion-buttons slot="end">
       <ion-button>Home</ion-button>
       <ion-button>About</ion-button>
@@ -12,18 +12,23 @@
       <ion-button>Projects</ion-button>
       <ion-button>Contacts</ion-button>
     </ion-buttons>
+  </ion-toolbar> -->
 
-  </ion-toolbar>
 </ion-header>
 
 
 <ion-content [fullscreen]="true">
 
-  <ion-buttons>
-    <ion-button> <ion-icon name="star" >Star</ion-icon> </ion-button>
-  </ion-buttons>
 
-  <ion-datetime></ion-datetime>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+      <ion-card-subtitle>This is about about page</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button [routerLink] = "['/about']" >About</ion-button>
+    </ion-card-content>
+  </ion-card>
 
 
 </ion-content>
