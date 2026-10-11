@@ -9,8 +9,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-    today : number = Date.now()
+    today : Date = new Date();
+    myName: string = 'Dave';
+    isLoading: boolean = true;
+    isAlbum: any;
+    
 
-  constructor() {}
+  constructor() {
+    console.log(this.myName)
+    console.log(this.today)
+  }
 
 }
