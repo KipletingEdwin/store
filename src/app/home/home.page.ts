@@ -16,8 +16,8 @@ export class HomePage {
     
 
   constructor() {
-    console.log(this.myName)
-    console.log(this.today)
+    // console.log(this.myName)
+    // console.log(this.today)
   }
 
 }
