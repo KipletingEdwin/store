@@ -15,11 +15,17 @@
 
         <ion-label>
           <h2> {{ project.title }} </h2>
-          <p>{{project.price}}</p>
-          
+          <p>{{project.description}}</p>
+          <ion-note>
+            ${{project.price}}
+          </ion-note>
         </ion-label>
       </ion-item>
+    } @empty {
+      <div class="ion-text-center ion-padding">
+        <ion-spinner></ion-spinner>
+        <p>Loading catalog items...</p>
+      </div>
     }
   </ion-list>
-
 </ion-content>
